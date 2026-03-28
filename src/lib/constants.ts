@@ -1,7 +1,7 @@
 // Contact
-export const WHATSAPP_NUMBER = "91636036395";
+export const WHATSAPP_NUMBER = "916360363095";
 export const WHATSAPP_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
-export const PHONE_DISPLAY = "+91 636036395";
+export const PHONE_DISPLAY = "+91 63603 63095";
 
 // Navigation
 export const NAV_LINKS = [

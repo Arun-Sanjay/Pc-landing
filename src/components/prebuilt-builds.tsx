@@ -59,7 +59,7 @@ export default function PrebuiltBuilds() {
         {/* Mobile horizontal scroll */}
         <div className="mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 md:hidden scrollbar-hide">
           {PREBUILT_CONFIGS.map((build) => (
-            <div key={build.name} className="min-w-[300px] flex-shrink-0 snap-start">
+            <div key={build.name} className="min-w-[85vw] max-w-[85vw] flex-shrink-0 snap-start">
               <BuildCard build={build} />
             </div>
           ))}
@@ -107,12 +107,12 @@ function BuildCard({
         {build.specs.map((spec) => (
           <div
             key={spec.label}
-            className="flex items-center justify-between border-b border-[#0F0F0F] py-2.5"
+            className="flex items-center justify-between gap-3 border-b border-[#0F0F0F] py-2.5"
           >
-            <span className="font-mono text-xs uppercase text-[#666666]">
+            <span className="shrink-0 font-mono text-xs uppercase text-[#666666]">
               {spec.label}
             </span>
-            <span className="font-mono text-sm font-medium text-white">
+            <span className="text-right font-mono text-sm font-medium text-white">
               {spec.value}
             </span>
           </div>
