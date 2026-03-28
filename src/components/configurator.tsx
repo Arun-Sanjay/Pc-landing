@@ -29,7 +29,7 @@ import {
   getCompatibleRam,
   RECOMMENDATIONS,
 } from "@/lib/configurator-data";
-import type { ComponentOption } from "@/lib/configurator-data";
+import type { ComponentOption, ConfiguratorStep } from "@/lib/configurator-data";
 import { APPLE_EASE } from "@/lib/utils";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
